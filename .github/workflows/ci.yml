@@ -32,3 +32,5 @@ jobs:
       - name: Run tests
         run: |
           pytest
+python-version: [3.9, 3.12]
+
