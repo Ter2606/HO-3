@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.11"]  # Прибрали 3.1
+        python-version: ["3.8", "3.9", "3.11"]
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -29,7 +30,4 @@ jobs:
       - name: Run tests
         run: |
           pytest
-git add .github/workflows/ci.yml
-git commit -m "Removed unsupported Python 3.1 from matrix"
-git push origin main
 
